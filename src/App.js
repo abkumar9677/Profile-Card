@@ -2,8 +2,7 @@ import './App.css';
 import pic from './profilepic.jpg';
 import React from 'react';
 //import ReactDOM from 'react-dom';
-// const element = <img src="/src/profilepic.jpg" alt="ProfilePic" />;
-// ReactDOM.render(element,document.getElementById('photo'));
+
 function App() {
   return React.createElement(
     "div",
@@ -56,10 +55,39 @@ function App() {
         React.createElement("span", null, "M"),
         React.createElement("span", null, "E"),
         React.createElement("span", null, "R")
+      ),
+      React.createElement("p", {
+        style: {
+          textAlign: "justify",
+          margin:'5px'
+        }
+      },"Hey there!, It's Abhishek Kumar. A B.Tech CSE Student of SANSKRITI UNIVERSITY, MATHURA. I'm very fond of creating very different design for web designing. Currently, I'm learning Full Stack Development by upGrad. This is my only a profile card. For better ",
+      React.createElement(
+          "i",
+          {
+            style: {color:"blue"}
+          },
+          "#jaan_pehchaan"
+        )," do visit to my profile by clicking the button view profile below.",
+        React.createElement(
+          "a",
+          {
+            href: "https://www.linkedin.com/in/abhishek-kumar-94b352188/"
+          },
+          React.createElement(
+            "button",
+            {
+              className: "btn",
+              style: {
+                textDecoration: "none"
+              }
+            },
+            "View Profile"
+          )
+        )
       )
     )
   );
-
 }
 
 export default App;
